@@ -1,28 +1,25 @@
-
 import java.io.*;
 import java.util.*;
 
 /**
- * 
- */
+ * */
 public class Media {
 
-    /**
-     * Default constructor
-     */
+    private double media;
+
     public Media() {
     }
 
-    /**
-     * 
-     */
-    private void media : double;
+    // Calcula la media (promedio)
+    public double getMedia(String[] dataList, int n) throws NumberFormatException {
+        if (n == 0) return 0.0;
+        
+        double suma = 0.0;
+        for (String s : dataList) {
+            suma += Double.parseDouble(s); // Convierte el String "160" a número 160.0
+        }
 
-    /**
-     * 
-     */
-    public void getMedia(dataList : string[], n : int) : double() {
-        // TODO implement here
+        media = suma / n;
+        return media;
     }
-
 }
